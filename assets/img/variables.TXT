@@ -1,0 +1,9 @@
+COLORS :
+#F9D5C9
+#F3A6AA
+#D5C8C9
+#343432
+
+FONTS (google fonts) : 
+Montserrat
+Oooh Baby

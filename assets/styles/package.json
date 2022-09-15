@@ -1,0 +1,21 @@
+{
+  "name": "Shanny",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "watch": "sass scss/main.scss public/main.css --watch --no-source-map",
+    "compile": "sass scss/main.scss public/main.css --no-source-map",
+    "compress": "sass scss/main.scss public/main.css --style=compressed --no-source-map",
+    "build": "npm-run-all compile compress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:sbelisle07/Marie-France-Test.git"
+  },
+  "author": "shanny",
+  "license": "ISC",
+  "dependencies": {
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.27.0"
+  }
+}
