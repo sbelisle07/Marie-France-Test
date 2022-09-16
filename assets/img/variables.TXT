@@ -7,3 +7,4 @@ COLORS :
 FONTS (google fonts) : 
 Montserrat
 Oooh Baby
+Barlow
