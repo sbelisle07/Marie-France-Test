@@ -1,0 +1,21 @@
+.navbar {
+  padding: 5px 0;
+  background-color: $gray;
+  justify-content: center;
+  
+  .container {
+    justify-content: center;
+    position: relative;
+  }
+  .cart {
+    position: absolute;
+    right: 15px;
+    top: 6px;
+    img {
+      width: 20px;
+    }
+  }
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+}

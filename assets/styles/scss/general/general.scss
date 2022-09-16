@@ -1,0 +1,23 @@
+body {
+	font-family: $monstera;
+}
+
+img {
+	max-width: 100%;
+}
+
+.btn {
+	border-radius: 50px;
+	transition: all 250ms;
+	color: $dark;
+}
+
+.btn-primary {
+	background-color: $primary;
+	border-color: $primary;
+}
+
+.btn-primary:hover{
+	background-color: $gray;
+	border-color: $gray;
+}
