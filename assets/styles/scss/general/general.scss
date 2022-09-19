@@ -19,5 +19,10 @@ img {
 
 .btn-primary:hover{
 	background-color: $gray;
+	border-color: $primary;
+}
+
+.btn-primary:focus {
+	background: $gray;
 	border-color: $gray;
 }

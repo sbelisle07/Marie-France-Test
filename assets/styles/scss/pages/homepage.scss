@@ -1,3 +1,5 @@
+// INTRO //
+
 .image-accueil {
 	.container {
 		position: relative;
@@ -34,8 +36,10 @@
 .banner-image {
 	background-size: cover;
 	height: 700px;
-	margin: 200px 0;
+	margin: 150px 0;
 }
+
+//EVENEMENTS//
 
 .events {
 	.container {
@@ -55,6 +59,57 @@
 	}
 }
 
+// SAVEURS ET PRODUITS //
+
+.cake {
+	margin-bottom: 70px;
+}
+
+.saveurs {
+	.container{
+		position: relative;
+		p {
+			font-family: $barlow;
+			color: $second;
+			opacity: 0.25;
+			font-size: 175px;
+			margin-bottom: 0px;
+			margin-left: 75px;
+		}
+		h2 {
+			z-index: 100;
+			font-family: $baby;
+			position: absolute;
+			bottom: 60px;
+			font-size: 45px;
+		}
+	}
+}
+
+.img-sav {
+	.container {
+		.grid {
+			display: grid;
+			grid-template-columns: repeat(5, 1fr);
+			gap: 10px;
+			.prod-img {
+				border-radius: 20px;
+			}
+		}
+	}
+}
+
+.saveurs-btn {
+	.container {
+		position: relative;
+		.btn {
+			position: absolute;
+			margin: 30px;
+			right: -15px;
+		}
+	}
+}
+
 .produits {
 	.container{
 		position: relative;
@@ -63,15 +118,65 @@
 			color: $second;
 			opacity: 0.25;
 			font-size: 175px;
+			margin: 150px 0 0 75px;
 		}
 		h2 {
 			z-index: 100;
 			font-family: $baby;
 			position: absolute;
+			bottom: 60px;
+			font-size: 45px;
 		}
-		.prod-img {
-			border-radius: 20px;
-			margin-top: 65px;
+	}
+}
+
+.img-prod {
+	.container {
+		.grid {
+			display: grid;
+			grid-template-columns: repeat(5, 1fr);
+			gap: 10px;
+			.prod-img {
+				border-radius: 20px;
+			}
+		}
+	}
+}
+
+.produit-btn {
+	.container {
+		position: relative;
+		.btn {
+			position: absolute;
+			margin: 30px;
+			right: -15px;
+		}
+	}
+}
+
+// CONCLUSION //
+
+.cupcake {
+	margin-top: 200px;
+}
+
+.bonheur {
+	.container {
+		position: relative;
+		.text {
+			text-align: center;
+			h3 {
+				font-width: 400;
+			}
+			h2 {
+				font-family: $baby;
+			}
+			p {
+				margin-top: 25px;
+			}
+		}
+		.btn {
+			margin: 40px 0 0 0;
 		}
 	}
 }
