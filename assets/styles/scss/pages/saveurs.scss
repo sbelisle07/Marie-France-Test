@@ -1,0 +1,71 @@
+.intro-saveur {
+	.leave {
+		position: absolute;
+		max-width: 225px;
+		transform: rotate(125deg);
+		left: -15px;
+		top: 12px;
+	}
+	.plop {
+		position: absolute;
+		right: -25px;
+		max-width: 250px;
+		transform: rotate(60deg);
+		top: 30px;
+	}
+	.container {
+		h2 {
+			font-family: $monstera;
+			font-weight: 400;
+			padding-top: 125px;
+			margin-bottom: 0px;
+			height: 145px;
+		}
+		h3 {
+			font-family: $baby;
+			font-size: 45px;
+			margin-bottom: 150px;
+		}
+	}
+}
+
+.gâteaux {
+	.container {
+		position: relative;
+
+		h1 {
+			position: absolute;
+			font-family: $barlow;
+			color: $second;
+			font-size: 150px;
+			opacity: .25;
+			left: -15;
+		}
+		ul {
+			margin-top: 200px;
+			list-style: none;
+			li {
+				padding: 5px;
+			}
+			li::before {
+				content: "•";
+				color: $second;
+				font-weight: bold;
+				display: inline-block;
+				width: 1em;
+				margin-left: -1em;
+			}
+		}
+		.gateau-img {
+			position: absolute;
+			right: 0px;
+			align-self: flex-end;
+			img{
+				max-height: 250px;
+				max-width: 300px;
+				border-top-left-radius: 20px;
+				border-bottom-left-radius: 20px;
+			}
+		}
+	}
+}

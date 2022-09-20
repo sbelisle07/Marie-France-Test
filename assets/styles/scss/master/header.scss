@@ -1,5 +1,4 @@
 .navbar {
-  position: sticky-top;
   padding: 5px 0;
   background-color: $gray;
   justify-content: center;
@@ -18,5 +17,36 @@
   }
   .navbar-collapse {
     flex-grow: 0;
+  }
+}
+
+.other {
+  .navbar {
+    padding: 5px 0;
+    background-color: $gray;
+    justify-content: right;
+
+    .container {
+      position: relative;
+      justify-content: space-between;
+      .navbar-brand {
+        left: 15px;
+        img{
+          width: 130px;
+        }
+      }
+      ul {
+        justify-content: right;
+      }
+    }
+    .cart {
+
+      img {
+        width: 20px;
+      }
+    }
+    .navbar-collapse {
+      flex-grow: 0;
+    }
   }
 }
