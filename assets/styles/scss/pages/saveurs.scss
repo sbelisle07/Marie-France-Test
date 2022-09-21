@@ -1,17 +1,31 @@
 .intro-saveur {
-	.leave {
+	position: relative;
+	max-height: 325px;
+	.plop-wrap {
 		position: absolute;
-		max-width: 225px;
-		transform: rotate(125deg);
-		left: -15px;
-		top: 12px;
+		overflow: hidden;
+		width: 265px;
+		height: 375px;
+		.leave {
+			position: absolute;
+			max-width: 225px;
+			transform: rotate(125deg);
+			left: -15px;
+			bottom: 20px;
+		}
 	}
-	.plop {
+	.plop-wrap-right {
 		position: absolute;
-		right: -25px;
-		max-width: 250px;
-		transform: rotate(60deg);
-		top: 30px;
+		right: 0;
+		left: auto;
+		width: 265px;
+		overflow: hidden;
+		.plop {
+			position: relative;
+			right: -45px;
+			max-width: 250px;
+			transform: rotate(60deg);
+		}
 	}
 	.container {
 		h2 {
@@ -23,27 +37,30 @@
 		}
 		h3 {
 			font-family: $baby;
-			font-size: 45px;
-			margin-bottom: 150px;
+			font-size: 50px;
+			margin-bottom: 135px;
 		}
 	}
 }
 
 .gâteaux {
-	background-image: url(assets/img/saveurs-produits-homepage/MaskGroup60.jpg)
+	background-image: url(../../img/saveurs/MaskGroup18.png);
+	background-repeat: no-repeat;
+	background-position: right bottom 40px;
+	background-size: 40%;
 	.container {
 		position: relative;
-
 		h1 {
 			position: absolute;
 			font-family: $barlow;
 			color: $second;
-			font-size: 150px;
+			font-size: 250px;
 			opacity: .25;
-			left: -15;
+			left: -40px;
+			padding-top: 60px;
 		}
 		ul {
-			margin-top: 200px;
+			margin-top: 365px;
 			list-style: none;
 			li {
 				padding: 5px;
@@ -53,20 +70,88 @@
 				color: $second;
 				font-weight: bold;
 				display: inline-block;
-				width: 1em;
-				margin-left: -1em;
+				width: 16px;
+				margin-left: -16px;
 			}
 		}
-		.gateau-img {
+		.btn {
+			margin-top: 10px;
+			margin-left: 16px;
+		}
+	}
+}
+
+.glaçage {
+	background-image: url(../../img/saveurs/MaskGroup23.png);
+	background-repeat: no-repeat;
+	background-position: left bottom 40px;
+	background-size: 40%;
+	.container {
+		position: relative;
+		h1 {
 			position: absolute;
-			right: 0px;
-			align-self: flex-end;
-			img{
-				max-height: 250px;
-				max-width: 300px;
-				border-top-left-radius: 20px;
-				border-bottom-left-radius: 20px;
+			font-family: $barlow;
+			color: $second;
+			font-size: 250px;
+			opacity: .25;
+			right: -40px;
+		}
+		ul {
+			margin-top: 365px;
+			list-style: none;
+			li {
+				padding: 5px;
 			}
+			li::before {
+				content: "•";
+				color: $second;
+				font-weight: bold;
+				display: inline-block;
+				width: 16px;
+				margin-left: -16px;
+			}
+		}
+		.btn {
+			margin-top: 10px;
+			margin-left: 16px;
+			justify-content: flex-end;
+		}
+	}
+}
+
+.garniture {
+	background-image: url(../../img/saveurs/MaskGroup18.png);
+	background-repeat: no-repeat;
+	background-position: right bottom 40px;
+	background-size: 40%;
+	.container {
+		position: relative;
+		h1 {
+			position: absolute;
+			font-family: $barlow;
+			color: $second;
+			font-size: 250px;
+			opacity: .25;
+			left: -40px;
+		}
+		ul {
+			align-self: center;
+			margin-top: 390px;
+			list-style: none;
+			li {
+				padding: 5px;
+			}
+			li::before {
+				content: "•";
+				color: $second;
+				font-weight: bold;
+				display: inline-block;
+				width: 16px;
+				margin-left: -16px;
+			}
+		}
+		.btn {
+			margin: 10px 0 75px 16px; 
 		}
 	}
 }
