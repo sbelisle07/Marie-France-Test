@@ -82,7 +82,7 @@
 		position: absolute;
 		font-family: $barlow;
 		color: $second;
-		font-size: 17vw;
+		font-size: 18vw;
 		opacity: .25;
 		@include max-md {
 			font-size: 175px;
@@ -97,7 +97,10 @@
 				margin-top: 0;
 			}
 			@include max-sm {
-				left: -50px;
+				left: 0px;
+			}
+			@include max-custom (520px) {
+				font-size: 25vw;
 			}
 		}
 		&.glac {
@@ -106,13 +109,20 @@
 				right: -22px;
 			}
 			@include max-sm {
-				right: -50px;
+				right: 0px;
+			}
+			@include max-custom (520px) {
+				font-size: 25vw;
 			}
 		}
 		&.gar {
 			left: -40px;
 			@include max-sm {
-				left: -50px;
+				font-size: 125px;
+				left: 0px;
+			}
+			@include max-custom (520px) {
+				font-size: 25vw;
 			}
 		}
 	}
@@ -120,17 +130,31 @@
 
 .sidefullimg {
 	position: relative;
-	margin-top: 60px;
+	margin-top: 125px;
+	@include max-custom (1350px) {
+		margin-top: 50px;
+	}
+	@include max-lg {
+		margin-top: 0;
+	}
+	@include max-md {
+		margin-top: 20px;
+	}
 	.fullimg-wrapper {
 		position: absolute;
 		right: 0;
 		left: auto;
 		top: 0;
 		bottom: 0;
-		width: 40%;
 		background-size: cover;
 		overflow: hidden;
 		border-radius: 30px 0 0 30px;
+		@include min-lg {
+			width: 40%;
+		}
+		@include max-lg {
+			width: 40%
+		}
 		@include max-sm {
 			width: 40%;
 		}
